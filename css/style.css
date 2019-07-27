@@ -1,11 +1,13 @@
 a.noneOutline {
 	outline: none;
 }
-.nav-item {
-	margin: 0;
-	padding: 15px 10px;
-	border-bottom: 1px solid #333333;
-}
-.nav-item:last-child {
-	border-bottom: none;
+@media screen and (max-height: 992px) {
+	.nav-item {
+		margin: 0;
+		padding: 15px 10px;
+		border-bottom: 1px solid #333333;
+	}
+	.nav-item:last-child {
+		border-bottom: none;
+	}
 }
