@@ -7,6 +7,14 @@
 	<link rel="stylesheet" href="/ishii0727/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/ishii0727/css/style.css">
 
+	<script>
+		window.onload = function() {
+			var index = $(".navbar-nav .nav-item").index();
+			$(".navbar-nav .nav-item").removeClass("active");
+			$(".navbar-nav .nav-item:eq(" + index + ")").addClass("active");
+		}
+	</script>
+
 </head>
 <body>
 	<header id="pageHead" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- pageHead -->
