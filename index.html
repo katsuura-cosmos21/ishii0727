@@ -9,9 +9,13 @@
 
 	<script>
 		window.onload = function() {
-			var index = $(".navbar-nav .nav-item").index();
-			$(".navbar-nav .nav-item").removeClass("active");
-			$(".navbar-nav .nav-item:eq(" + index + ")").addClass("active");
+			var active = $(".navbar-nav .navbar-item:eq(0)").addClass("active");
+
+			$(".navbar-nav .navbar-item").click(function() {
+				var index = $(".navbar-nav .nav-item").index();
+				$(".navbar-nav .nav-item").removeClass("active");
+				$(".navbar-nav .nav-item:eq(" + index + ")").addClass("active");
+			});
 		}
 	</script>
 
@@ -26,7 +30,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a class="nav-item nav-link active" href="https://katsuura-cosmos21.github.io/ishii0727/">ホーム</a>
+					<a class="nav-item nav-link" href="https://katsuura-cosmos21.github.io/ishii0727/">ホーム</a>
 					<a class="nav-item nav-link" href="#">これまでの歩み</a>
 					<a class="nav-item nav-link" href="#">会員の皆様へ</a>
 					<a class="nav-item nav-link" href="#">入会案内</a>
