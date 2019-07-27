@@ -12,7 +12,7 @@
 			$(".navbar-nav .nav-item:eq(0)").addClass("active");
 
 			$(".navbar-nav .nav-item").click(function() {
-				var index = $(".navbar-nav .nav-item").index();
+				var index = $(".navbar-nav .nav-item").index(this);
 				$(".navbar-nav .nav-item").removeClass("active");
 				$(".navbar-nav .nav-item:eq(" + index + ")").addClass("active");
 			});
